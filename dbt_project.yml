@@ -42,5 +42,5 @@ models:
       +materialized: table
     staging:
     # keeping this as view as it is connected the raw data source, and we can keep this up to date
-      +matrialized: view
+      +materialized: view
     
