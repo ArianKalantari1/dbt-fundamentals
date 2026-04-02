@@ -1,15 +1,19 @@
 models:
   - name: stg_jaffle_shop__customers
+    description: grain of this table is one unique customer per row
     columns:
       - name: customer_id
+        description: primary key for the customer table
         data_tests:
           - unique
           - not_null
       - name: first_name
       - name: last_name
   - name: stg_jaffle_shop__orders
+    description: grain is one order per row
     columns:
       - name: order_id
+        description: PK for order table
         data_tests:
           - unique
           - not_null
